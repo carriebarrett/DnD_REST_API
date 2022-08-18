@@ -1,0 +1,2445 @@
+{
+	"info": {
+		"_postman_id": "7f151bdd-d9e5-4b1b-9ea7-4fc8a8720ef0",
+		"name": "barretca_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20331469"
+	},
+	"item": [
+		{
+			"name": "wallace create azriel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"azriel_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Azriel\",\r\n    \"class\": \"Rogue\",\r\n    \"level\": 27\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace create cassian",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"cassian_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cassian\",\r\n    \"class\": \"Fighter\",\r\n    \"level\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace create rhysand",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"rhysand_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rhysand\",\r\n    \"class\": \"Wizard\",\r\n    \"level\": 28\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace create lucien",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"lucien_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lucien\",\r\n    \"class\": \"Wizard\",\r\n    \"level\": 17\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace create devlon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"devlon_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lord Devlon\",\r\n    \"class\": \"Fighter\",\r\n    \"level\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace add tarquin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"tarquin_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tarquin\",\r\n    \"class\": \"Cleric\",\r\n    \"level\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid request body create character",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"400 status code\", function () {\r",
+							"    //Check for 400 status code\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Invalid Request Body Character\",\r\n    \"class\": \"Warrior\",\r\n    \"level\": \"19\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid jwt create character",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"401 status code\", function () {\r",
+							"    //Check for 4 status code\r",
+							"    pm.response.to.have.status(401);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{invalid_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Invalid JWT Character\",\r\n    \"class\": \"Warrior\",\r\n    \"level\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid non-unique character name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tarquin\",\r\n    \"class\": \"Cleric\",\r\n    \"level\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid content type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"415 status code\", function () {\r",
+							"    //Check for 415 status code\r",
+							"    pm.response.to.have.status(415);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "010101",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid request type to /characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"405 status code\", function () {\r",
+							"    //Check for 405 status code\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid accept get all characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"406 status code\", function () {\r",
+							"    //Check for 406 status code\r",
+							"    pm.response.to.have.status(406);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace get all characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"wallace_char_page2\", pm.response.json()[\"next\"]);\r",
+							"\r",
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace characters page 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wallace_char_page2}}",
+					"host": [
+						"{{wallace_char_page2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre create amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"amren_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Amren\",\r\n    \"class\": \"Warrior\",\r\n    \"level\": 32\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre get characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre view amren html",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace view amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid get character",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"404 status code\", function () {\r",
+							"    //Check for 404 status code\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{invalid_token}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{invalid_token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create starsword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"starsword_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Starsword\",\r\n    \"type\": \"Sword\",\r\n    \"level\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create atoraxia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"atoraxia_id\", pm.response.json()[\"id\"]);\r",
+							"\r",
+							"pm.test(\"201 status code\", function () {\r",
+							"    //Check for 201 status code\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Atoraxia\",\r\n    \"type\": \"Sword\",\r\n    \"level\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all weapons",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid request add weapon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"400 status code\", function () {\r",
+							"    //Check for 400 status code\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Atoraxia Invalid Level\",\r\n    \"type\": \"Sword\",\r\n    \"levels\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid name  not unique create weapon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Atoraxia\",\r\n    \"type\": \"Mace\",\r\n    \"level\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre add atoraxia to amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}",
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace add starsword to amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}/weapons/{{starsword_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}",
+						"weapons",
+						"{{starsword_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre add starsword to amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}/weapons/{{starsword_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}",
+						"weapons",
+						"{{starsword_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace add starsword to azriel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{azriel_id}}/weapons/{{starsword_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{azriel_id}}",
+						"weapons",
+						"{{starsword_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre add invalid weapon to amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"404 status code\", function () {\r",
+							"    //Check for 404 status code\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}/weapons/{{invalid_token}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}",
+						"weapons",
+						"{{invalid_token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre view amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get starsword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons/{{starsword_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{starsword_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre delete cassian",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"403 status code\", function () {\r",
+							"    //Check for 403 status code\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{cassian_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{cassian_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete cassian",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{cassian_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{cassian_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete rhysand",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{rhysand_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{rhysand_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace get all characters 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"wallace_char_page2\", pm.response.json()[\"next\"]);\r",
+							"\r",
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete starsword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons/{{starsword_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{starsword_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre remove atoraxia from amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}",
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre view amren 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get invalid weapon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"404 status code\", function () {\r",
+							"    //Check for 404 status code\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons/{{invalid_token}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{invalid_token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete invalid character",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"404 status code\", function () {\r",
+							"    //Check for 404 status code\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{invalid_token}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{invalid_token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace PUT update azriel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Azriel Shadowsinger\",\r\n    \"class\": \"Rogue\",\r\n    \"level\": 28\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters/{{azriel_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{azriel_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace patch update azriel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"level\": 41\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters/{{azriel_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{azriel_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace PATCH azriel invalid attribute",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"400 status code\", function () {\r",
+							"    //Check for 400 status code\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Azriel Shadowsinger\",\r\n    \"levels\": 31\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/characters/{{azriel_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{azriel_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update PUT atoraxia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Atoraxia\",\r\n    \"type\": \"Magic Sword\",\r\n    \"level\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update PATCH atoraxia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"level\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre delete amren",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{amren_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{amren_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get atoraxia html",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete atoraxia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons/{{atoraxia_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons",
+						"{{atoraxia_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete tarquin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{tarquin_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{tarquin_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete devlon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{devlon_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{devlon_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete azriel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{azriel_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{azriel_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace delete lucien",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"204 status code\", function () {\r",
+							"    //Check for 204 status code\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters/{{lucien_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters",
+						"{{lucien_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all weapons 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/weapons",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feyre get characters 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{feyre_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallace get all characters 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Set environment variables from response\r",
+							"pm.environment.set(\"wallace_char_page2\", pm.response.json()[\"next\"]);\r",
+							"\r",
+							"pm.test(\"200 status code\", function () {\r",
+							"    //Check for 200 status code\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{wallace_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/characters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
